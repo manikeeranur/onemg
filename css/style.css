@@ -377,6 +377,120 @@ body {
   margin: 10px 0;
   font-size: 18px;
 }
+
+input#email_txt {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+.mail {
+  position: relative;
+}
+.mail i {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  color: var(--container_bg);
+}
+.social_media_icon {
+  margin: 10px 0;
+}
+.social_media_icon .fa {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background: var(--text_color);
+  color: var(--container_bg);
+  margin: 5px;
+  border-radius: 50%;
+}
+.mobile_media_icon {
+  margin: 10px 0;
+}
+.mobile_media_icon .fa {
+  margin: 10px;
+}
+.mobile_media_icon {
+  display: none;
+}
+.similar_products_box {
+  margin: 30px 0;
+}
+.similar_products_box h3 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--grey);
+  font-size: 15px;
+}
+.similar_products {
+  margin: 50px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.similar_products_card {
+  width: 30%;
+  background-color: var(--text_color);
+  color: var(--container_bg);
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+.similar_products_card img {
+  width: 80%;
+  margin: 50px auto;
+  display: block;
+}
+.similar_products_card p {
+  font-size: 13px;
+  margin: 50px 0 20px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 90%;
+}
+.similar_products_card b {
+  font-size: 20px;
+  color: var(--orange);
+  font-weight: bold;
+}
+.similar_products_card .fa-heart-o {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: bold;
+}
+
+.product {
+  display: flex;
+  margin: 30px 0;
+}
+.product_left {
+  width: 10%;
+}
+.product_right {
+  width: 80%;
+  background: var(--text_color);
+}
+.steps {
+  display: flex;
+  justify-content: center;
+}
+.step {
+  width: 28%;
+  margin: 10px;
+}
+.step h4 {
+  color: var(--container_bg);
+  font-weight: bold;
+}
+.step p {
+  color: var(--container_bg);
+  font-weight: normal;
+  font-size: 8px;
+  margin: 5px 0;
+  height: 25px;
+}
 @media (max-width: 576px) {
   .Carousel {
     height: auto;
@@ -455,10 +569,28 @@ body {
   }
   .footer1 {
     width: 100%;
-    padding: 0 30px;
+    padding: 0 0px;
   }
   .footer2,
   .footer3 {
     display: none;
+  }
+  .social_media_icon {
+    display: none;
+  }
+  .mobile_media_icon {
+    display: block;
+  }
+  .similar_products_card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .overview_box,
+  .ProductShowCase,
+  .similar_products_box {
+    display: none;
+  }
+  .footer {
+    margin: 50px 0 0;
   }
 }
