@@ -516,7 +516,7 @@ input#email_txt {
     margin: 0 0 20px;
   }
   .cardgroup .card {
-    min-width: 95%;
+    min-width: 70%;
     background-color: var(--text_color);
     border-radius: 5px;
     margin: 10px;
