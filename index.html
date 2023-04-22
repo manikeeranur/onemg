@@ -5,16 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./OwlCarousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="OwlCarousel/dist/assets/owl.theme.default.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- navbar section start -->
+    <div class="navbar">
+      <img src="./images/Icons/shahs.svg" class="brandName" alt="" />
+      <div class="menu">
+        <img src="./images/Icons/Menu.svg" alt="" />
+        <p>MENU</p>
+      </div>
+      <div class="search">
+        <input type="search" name="" placeholder="Search" id="" />
+        <img src="./images/Icons/Search_ic.svg" alt="" />
+      </div>
+      <div class="nav_right">
+        <img src="./images/Icons/user.svg" alt="" class="user" />
+        <span class="shopingCart">
+          <img src="./images/Icons/shopingCart.svg" class="shoping" alt="" />
+          <span class="countbadge">2</span>
+        </span>
+      </div>
+    </div>
+    <!-- navbar section End -->
+
+    <!-- AC_advertisement section Start -->
+    <div class="AC_advertisement">
+      <img src="./images/AC_Advertisement.png" width="100%" alt="" />
+    </div>
+    <!-- AC_advertisement section End -->
+
     <!-- crumbs Start -->
     <ul class="crumb">
-      <li>Home</li>
-      <li>Home Appliances</li>
+      <li>Home <i class="fa fa-angle-right" aria-hidden="true"></i></li>
+      <li>Home Appliances <i class="fa fa-angle-right" aria-hidden="true"></i></li>
       <li>Air Conditioners</li>
     </ul>
+
+    <div class="sm AC-heading">
+      <p>Inverter Acs</p>
+      <p>189 Products Found</p>
+    </div>
     <!-- crumbs End -->
 
     <div class="container">
@@ -22,10 +56,26 @@
         <div class="left_content">
           <!-- carousel start -->
           <div class="carousel_image"></div>
-          <div class="carousel_box">
-            <div class="carousel_captions"></div>
-            <div class="carousel_captions"></div>
-            <div class="carousel_captions"></div>
+
+          <div class="carousel_box owl-carousel owl-theme" id="AC-owl-carousel">
+            <div class="carousel_captions">
+              <img src="./images/LG_Ac.webp" alt="" />
+            </div>
+            <div class="carousel_captions">
+              <img src="./images/SamsungAc.png" alt="" />
+            </div>
+            <div class="carousel_captions">
+              <img src="./images/LG_Ac_1.webp" alt="" />
+            </div>
+            <div class="carousel_captions">
+              <img src="./images/LG_Ac.webp" alt="" />
+            </div>
+            <div class="carousel_captions">
+              <img src="./images/SamsungAc.png" alt="" />
+            </div>
+            <div class="carousel_captions">
+              <img src="./images/LG_Ac_1.webp" alt="" />
+            </div>
           </div>
           <!-- carousel End -->
         </div>
@@ -39,24 +89,30 @@ Copper Condenser,PS-Q19PNXE,White)
 
           <!-- pricing section start -->
           <div class="pricetag">
-            <div class="pricedrop">
-              <small>Price Drop</small>
-              <b>28,990.00</b>
-            </div>
-            <div class="mrp">
-              <small>MRP</small>
-              <b> 45,990.00 </b>
+            <div class="priceRange">
+              <div class="pricedrop">
+                <span>Price Drop</span>
+                <b>28,990.00</b>
+              </div>
+              <div class="mrp">
+                <span>MRP</span>
+                <b> 45,990.00 </b>
+              </div>
             </div>
             <img src="./images/Icons/offer30.svg" width="60px" alt="" />
 
             <div class="compare"><input type="checkbox" name="" id="" /><span>Compare</span></div>
+            <div class="sm mt20">
+              <button class="buynow">BUY NOW</button>
+              <buttin class="addcart">ADD TO CART</buttin>
+            </div>
           </div>
           <!-- pricing section End -->
 
           <!-- key features section Start -->
 
           <div class="keyfeatures">
-            <h3>Key Features</h3>
+            <h3 class="section_heading">Key Features</h3>
             <ul>
               <li>1.5 Ton | Inverter Split AC</li>
               <li>Approximate Coverage Area - 180 Sq.Ft (16.7 Sq.M)</li>
@@ -70,13 +126,14 @@ Copper Condenser,PS-Q19PNXE,White)
 
           <!-- extra Savings section Start -->
 
-          <div class="extraSavings">
-            <h3>Extra savings (6 Offers)</h3>
+          <div class="extraSavings sm">
+            <h3 class="section_heading">Extra savings (6 Offers)</h3>
+
             <div class="cardgroup">
               <div class="card">
                 <div class="card-header">
-                  <img src="./images/banklogo/sbi.png" alt="" />
-                  <span>State Bank </span>
+                  <img src="./images/banklogo/Qik.png" alt="" />
+                  <span>Qik EMI Card </span>
                 </div>
                 <hr />
                 <div class="card-body">
@@ -103,8 +160,99 @@ Copper Condenser,PS-Q19PNXE,White)
               </div>
               <div class="card">
                 <div class="card-header">
-                  <img src="./images/banklogo/hdfc.png" alt="" />
-                  <span>HDFC Bank</span>
+                  <img src="./images/banklogo/icici.png" alt="" />
+                  <span>ICICI Bank</span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="extraSavings lg">
+            <h3 class="section_heading">Extra savings (6 Offers)</h3>
+
+            <div class="cardgroup owl-carousel owl-theme" id="extraSavings-carousel">
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/Qik.png" alt="" />
+                  <span>Qik EMI Card </span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/icici.png" alt="" />
+                  <span>ICICI Bank</span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/icici.png" alt="" />
+                  <span>ICICI Bank</span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/Qik.png" alt="" />
+                  <span>Qik EMI Card </span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/icici.png" alt="" />
+                  <span>ICICI Bank</span>
+                </div>
+                <hr />
+                <div class="card-body">
+                  <p>
+                    Split your bill in 3 for free with No Cost EMI. Offer available on Products priced
+                    <i class="fa fa-inr" aria-hidden="true"></i>5,000 & more
+                  </p>
+                  <p>View More +</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header">
+                  <img src="./images/banklogo/icici.png" alt="" />
+                  <span>ICICI Bank</span>
                 </div>
                 <hr />
                 <div class="card-body">
@@ -122,24 +270,24 @@ Copper Condenser,PS-Q19PNXE,White)
           <!-- zip production plan section End -->
 
           <div class="zip_production_plan">
-            <h3>Zip Production Plan</h3>
+            <h3 class="section_heading">Zip Production Plan</h3>
             <div class="zip_productionconnent">
               <p>Extended warranty plans starting at <i class="fa fa-inr" aria-hidden="true"></i>3273 (approx <i class="fa fa-inr" aria-hidden="true"></i>273/mo. )</p>
               <p>Extended Production for yoyr device beyond the manufacturer warrenty with coverage against all manufacturing defects . <span>Know More +</span></p>
             </div>
             <div>
               <div class="zipmrp">
-                <p><i class="fa fa-circle-o" aria-hidden="true"></i> 1 Year Extended Warrenty-Onsitego</p>
+                <p><span class="circle"></span> 1 Year Extended Warrenty-Onsitego</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>3,273.00</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>3,850.00</p>
               </div>
               <div class="zipmrp">
-                <p><i class="fa fa-circle-o" aria-hidden="true"></i> 2 Year Extended Warrenty-Onsitego</p>
+                <p><span class="circle"></span> 2 Year Extended Warrenty-Onsitego</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>4,998.00</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>5,880.00</p>
               </div>
               <div class="zipmrp">
-                <p><i class="fa fa-circle-o" aria-hidden="true"></i> 2 Year Extended Warrenty-Onsitego</p>
+                <p><span class="circle"></span> 2 Year Extended Warrenty-Onsitego</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>8,063.00</p>
                 <p><i class="fa fa-inr" aria-hidden="true"></i>9,465.00</p>
               </div>
@@ -154,98 +302,112 @@ Copper Condenser,PS-Q19PNXE,White)
 
       <!-- Specifification Section Start -->
       <div class="spacifications">
-        <h3>Specifications</h3>
-
-        <h2>AIR CONDITIONER CATEGORY</h2>
-        <div class="spacifications_Type">
-          <div class="box">
-            <p>Air Conditioner Type</p>
-            <p>Split</p>
-          </div>
-          <div class="box">
-            <p>Air Conditioner Capacity</p>
-            <p>1.5 Ton</p>
-          </div>
-          <div class="box">
-            <p>Approximate Coverage Area (Sq.Ft)</p>
-            <p>180 Sq.Ft</p>
-          </div>
-          <div class="box">
-            <p>Approximate Coverage Area (Sq.m)</p>
-            <p>16.7 Sq.m</p>
-          </div>
-          <div class="box">
-            <p>Installation Type</p>
-            <p>Wall Mount</p>
-            <p></p>
-          </div>
+        <div class="heading_toggle">
+          <h3 class="section_heading">Specifications</h3>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
         </div>
-        <h2>MANUFACTURER DETAILS</h2>
-        <div class="spacifications_Type manufaturer">
-          <div class="box">
-            <p>Brand</p>
-            <p>LG</p>
+        <div class="Accordion_content">
+          <h2>AIR CONDITIONER CATEGORY</h2>
+          <div class="spacifications_Type">
+            <div class="box">
+              <p>Air Conditioner Type</p>
+              <p>Split</p>
+            </div>
+            <div class="box">
+              <p>Air Conditioner Capacity</p>
+              <p>1.5 Ton</p>
+            </div>
+            <div class="box">
+              <p>Approximate Coverage Area (Sq.Ft)</p>
+              <p>180 Sq.Ft</p>
+            </div>
+            <div class="box">
+              <p>Approximate Coverage Area (Sq.m)</p>
+              <p>16.7 Sq.m</p>
+            </div>
+            <div class="box">
+              <p>Installation Type</p>
+              <p>Wall Mount</p>
+              <p></p>
+            </div>
           </div>
-          <div class="box">
-            <p>Model Series</p>
-            <p>PS-Q19PNXE</p>
+          <h2>MANUFACTURER DETAILS</h2>
+          <div class="spacifications_Type manufaturer">
+            <div class="box">
+              <p>Brand</p>
+              <p>LG</p>
+            </div>
+            <div class="box">
+              <p>Model Series</p>
+              <p>PS-Q19PNXE</p>
+            </div>
+            <div class="box">
+              <p>Model Number</p>
+              <p>PS-Q19PNXE</p>
+            </div>
           </div>
-          <div class="box">
-            <p>Model Number</p>
-            <p>PS-Q19PNXE</p>
-          </div>
+          <button class="viewmorebtn">View More +</button>
         </div>
-        <button class="viewmorebtn">View More +</button>
       </div>
       <!-- Specifification Section End -->
 
       <!-- OverView Section Start -->
       <div class="overview_box">
-        <h3>Overview</h3>
-        <h2>Why buy LG 1.5 Ton 3 Star Inverter AC</h2>
+        <div class="heading_toggle">
+          <h3 class="section_heading">Overview</h3>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div class="Accordion_content">
+          <h2>Why buy LG 1.5 Ton 3 Star Inverter AC</h2>
 
-        <div class="overview">
-          <div class="overview_left">
-            <div class="keyfeatures">
-              <ul>
-                <li>Dual Rotary Compressor enables long-lasting usage</li>
-                <li>Anti Virus Filter helps in Protecting from virus</li>
-                <li>1.5 Ton Capacity gives perfect cooling experience</li>
-                <li>1740 watts cooling capacity power output</li>
-                <li>R-32 Refregerent ensures superior cooling</li>
-              </ul>
+          <div class="overview">
+            <div class="overview_left">
+              <div class="keyfeatures">
+                <ul>
+                  <li>Dual Rotary Compressor enables long-lasting usage</li>
+                  <li>Anti Virus Filter helps in Protecting from virus</li>
+                  <li>1.5 Ton Capacity gives perfect cooling experience</li>
+                  <li>1740 watts cooling capacity power output</li>
+                  <li>R-32 Refregerent ensures superior cooling</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="overview_right">
-            <p>Feel the chilled temprature inside your room when you buy LG 1.5 Ton 3 Star Inverter Split AC.The AC comes with an Anti-virus Filter which helps in filtering the dust and virus,offering fresh air intake which make it more efficiant.Having a 441 Airflow feature enables you amazing.</p>
+            <div class="overview_right">
+              <p>Feel the chilled temprature inside your room when you buy LG 1.5 Ton 3 Star Inverter Split AC.The AC comes with an Anti-virus Filter which helps in filtering the dust and virus,offering fresh air intake which make it more efficiant.Having a 441 Airflow feature enables you amazing.</p>
+            </div>
           </div>
         </div>
       </div>
       <!-- OverView Section End -->
       <!-- ProductShowCase Section Start -->
       <div class="ProductShowCase">
-        <h3>Product Showcase</h3>
-        <div class="product">
-          <div class="product_left">
-            <img src="./images/LGLogo.png" width="50%" alt="" />
-          </div>
-          <div class="product_right">
-            <img src="./images/Yoga.png" width="100%" alt="" />
-            <div class="steps">
-              <div class="step">
-                <h4>Step1</h4>
-                <p>Microorganisms comes in contact with Cationic silver ions</p>
-                <img src="./images/step1.png" width="100%" alt="" />
-              </div>
-              <div class="step">
-                <h4>Step2</h4>
-                <p>Dissolution of outer layer of microorganisms by Cationic silver ions</p>
-                <img src="./images/step2.png" width="100%" alt="" />
-              </div>
-              <div class="step">
-                <h4>Step3</h4>
-                <p>Rupturing the RNA/DNA of microorganisms & Deactivating Viruses and bacteria to provide satisfactory production cleansing the air.</p>
-                <img src="./images/step3.png" width="100%" alt="" />
+        <div class="heading_toggle">
+          <h3 class="section_heading">Product Showcase</h3>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+        <div class="Accordion_content">
+          <div class="product">
+            <div class="product_left">
+              <img src="./images/LGLogo.png" width="50%" alt="" />
+            </div>
+            <div class="product_right">
+              <img src="./images/Yoga.png" width="100%" alt="" />
+              <div class="steps">
+                <div class="step">
+                  <h4>Step1</h4>
+                  <p>Microorganisms comes in contact with Cationic silver ions</p>
+                  <img src="./images/step1.png" width="100%" alt="" />
+                </div>
+                <div class="step">
+                  <h4>Step2</h4>
+                  <p>Dissolution of outer layer of microorganisms by Cationic silver ions</p>
+                  <img src="./images/step2.png" width="100%" alt="" />
+                </div>
+                <div class="step">
+                  <h4>Step3</h4>
+                  <p>Rupturing the RNA/DNA of microorganisms & Deactivating Viruses and bacteria to provide satisfactory production cleansing the air.</p>
+                  <img src="./images/step3.png" width="100%" alt="" />
+                </div>
               </div>
             </div>
           </div>
@@ -254,25 +416,49 @@ Copper Condenser,PS-Q19PNXE,White)
       <!-- ProductShowCase Section End -->
       <!-- Similar Products Section Start -->
       <div class="similar_products_box">
-        <h3>Similar Products</h3>
-        <div class="similar_products">
-          <div class="similar_products_card">
-            <img src="./images/LG_Ac.webp" alt="" />
-            <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
-            <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </div>
-          <div class="similar_products_card">
-            <img src="./images/LG_Ac.webp" alt="" />
-            <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
-            <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-          </div>
-          <div class="similar_products_card">
-            <img src="./images/LG_Ac.webp" alt="" />
-            <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
-            <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
+        <div class="heading_toggle">
+          <h3 class="section_heading">Similar Products</h3>
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+        </div>
+
+        <div class="Accordion_content">
+          <div id="owl-carousel" class="owl-carousel owl-theme">
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
+            <div class="item">
+              <img src="./images/LG_Ac.webp" alt="" />
+              <p>LG 1.5 Ton 3 Star Invertor Split AC(5-in-1 Convertible Copper)</p>
+              <b> <i class="fa fa-inr" aria-hidden="true"></i>&nbsp;47,990.00</b>
+              <img src="./images/Icons/heart_icon.svg" class="fa-heart-o" alt="" />
+            </div>
           </div>
         </div>
       </div>
@@ -346,7 +532,11 @@ Copper Condenser,PS-Q19PNXE,White)
           </div>
         </div>
       </div>
+      <p class="copyright">CopyRight &copy; 2019 S.C.SHAN &amp; CO PVT LTD. All Rights Reversed</p>
     </div>
     <!-- Footer Section End -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="OwlCarousel/dist/owl.carousel.min.js"></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
